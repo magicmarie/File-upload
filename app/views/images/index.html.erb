@@ -2,7 +2,7 @@
 <%= form_for(Image.new, html: { multipart: true, class: "dropzone"}) do |f|  %>
   <div class="fallback">
     <%= f.file_field :photo %><br>
-    <%= f.submit "Upload my photo Avatar" %>
+    <%= f.submit "Upload my photo" %>
   </div>
 <% end %>
 

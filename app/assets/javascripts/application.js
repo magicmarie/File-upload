@@ -25,7 +25,8 @@ $(document).ready(function(){
     var dropzone = new Dropzone (".dropzone", {
         maxFilesize: 300,
         paramName: "image[photo]", // Rails expects the file upload to be something like model[field_name]
-        addRemoveLinks: false // Don't show remove links on dropzone itself.
+        addRemoveLinks: false, // Don't show remove links on dropzone itself.
+        uploadMultiple: true
     });
 
     dropzone.on("success", function(file) {
